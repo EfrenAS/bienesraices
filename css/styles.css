@@ -1,0 +1,41 @@
+/*** PREDEFINED STYLES ***/
+a{
+  text-decoration: none;
+}
+
+/** GLOBALS **/
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.site-header.init {
+  background-image: url(../img/header.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  min-height: 600px;
+}
+
+.bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+
+/* Navegación */
+.navigation a {
+  font-size: 18px;
+  color: #ffffff;
+  margin-right: 20px;
+}
+
+.navigation a:last-of-type {
+  margin: 0;
+}
+
+.navigation:hover {
+  color: #71b100;
+}

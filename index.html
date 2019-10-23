@@ -4,20 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/styles.css">
   <title>Bienes Raíces by HistrixDev</title>
 </head>
 <body>
-  <header> <!-- La etiqueta <header> se utiliza siempre que se tenga un encabezado en la página-->
-    <a href="/">
-        <img src="img/logo.svg" alt="Logotipo de Bienes Raíces">
-    </a>
-    <nav> <!-- La etiqueta <nav> se utiliza para la navegación que se tenga en el sitio web-->
-      <a href="nosotros.html">Nosotros</a>
-      <a href="anuncios.html">Anuncios</a>
-      <a href="blog.html">Blog</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
-    <h1>Venta de Casas y Departamentos Exclusivos de lujo</h1>
+  <header class="site-header init"> <!-- La etiqueta <header> se utiliza siempre que se tenga un encabezado en la página-->
+    <div class="container">
+      <div class="bar-container">
+        <a href="/">
+            <img src="img/logo.svg" alt="Logotipo de Bienes Raíces">
+        </a>
+        <nav class="navigation"> <!-- La etiqueta <nav> se utiliza para la navegación que se tenga en el sitio web-->
+          <a href="nosotros.html">Nosotros</a>
+          <a href="anuncios.html">Anuncios</a>
+          <a href="blog.html">Blog</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </div><!-- .bar-container -->
+      <h1>Venta de Casas y Departamentos Exclusivos de lujo</h1>
+    </div><!-- .container -->
   </header>
   <!-- La etiqueta <section> se utiliza bajo las siguientes condiciones:
       1.- El primer hijo debe de ser una etiqueta de encabezado <h1>, <h2>, <h3>, etc...
@@ -109,7 +114,7 @@
     <p>- Efrén Anastacio</p>
   </section>
   <footer>
-    <nav>
+    <nav class="navigation">
       <a href="nosotros.html">Nosotros</a>
       <a href="anuncios.html">Anuncios</a>
       <a href="blog.html">Blog</a>
