@@ -36,6 +36,7 @@ h4 {
 
 a {
   text-decoration: none;
+  color: #000000;
 }
 
 li {
@@ -220,4 +221,62 @@ li {
 
 .contact-container p {
   font-size: 1.8rem;
+}
+
+/* Blog */
+.blog-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-container .blog {
+  flex-basis: 60%;
+}
+
+.blog-container .testimonials {
+  flex-basis: calc(40% - 2rem);
+}
+
+.blog-entries {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.blog-entries:last-of-type {
+  margin-bottom: 0;
+}
+
+.blog-entries .article-img {
+  flex-basis: 40%;
+}
+
+.blog-entries .article-description {
+  flex-basis: calc(60% - 3rem);
+}
+
+.article-description a {
+  transition: color 0.4s;
+}
+
+.article-description a:hover {
+  color: #71b100;
+}
+
+.article-description h4 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+.article-description h4::after {
+  content: '';
+  display: block;
+  width: 15rem;
+  height: 0.5rem;
+  background-color: #71b100;
+  margin-top: 1rem;
+}
+
+.article-description span {
+  color: #e08709;
 }
