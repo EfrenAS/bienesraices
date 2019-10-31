@@ -45,6 +45,11 @@ li {
 }
 
 /*** Utilities ***/
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
 .section {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -89,10 +94,6 @@ li {
 }
 
 /** GLOBALS **/
-.container {
-  max-width: 120rem;
-  margin: 0 auto;
-}
 
 /* Header */
 
@@ -164,12 +165,14 @@ li {
 .ad-container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .advert {
-  flex-basis: calc(33.3% - 1rem);
+  flex: 0 0 calc(33.3% - 1rem); /*Es la versión corta de los siguiente atributos flex-grow; flex-wrap; y flex-basis; deben ser definidos en este orden*/
   border: 1px solid #b5b5b5;
   background-color: #f5f5f5;
+  margin-bottom: 2rem;
 }
 
 .ad-content {
