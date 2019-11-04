@@ -75,6 +75,10 @@ li {
   text-align: center;
 }
 
+.content-center {
+max-width: 800px;
+}
+
 .btn {
   display: inline-block;
   color: #ffffff;
@@ -194,6 +198,8 @@ li {
   display: flex;
   justify-content: space-evenly;
   padding: 0;
+  flex: 1;
+  max-width: 500px;
 }
 
 .features-house li {
@@ -350,4 +356,11 @@ li {
   font-size: 2rem;
   margin: 0;
   padding: 3rem 0;
+}
+
+/* Advertisments */
+.property-resume {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
