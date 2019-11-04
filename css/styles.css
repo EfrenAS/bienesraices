@@ -45,6 +45,11 @@ li {
 }
 
 /*** Utilities ***/
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
 .section {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -70,6 +75,10 @@ li {
   text-align: center;
 }
 
+.content-center {
+max-width: 800px;
+}
+
 .btn {
   display: inline-block;
   color: #ffffff;
@@ -89,12 +98,14 @@ li {
 }
 
 /** GLOBALS **/
-.container {
-  max-width: 120rem;
-  margin: 0 auto;
-}
 
 /* Header */
+
+.site-header {
+  background-color: #333333;
+  padding: 1rem 0 3rem 0;
+}
+
 .site-header.init {
   background-image: url(../img/header.jpg);
   background-position: center center;
@@ -158,12 +169,14 @@ li {
 .ad-container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .advert {
-  flex-basis: calc(33.3% - 1rem);
+  flex: 0 0 calc(33.3% - 1rem); /*Es la versión corta de los siguiente atributos flex-grow; flex-wrap; y flex-basis; deben ser definidos en este orden*/
   border: 1px solid #b5b5b5;
   background-color: #f5f5f5;
+  margin-bottom: 2rem;
 }
 
 .ad-content {
@@ -185,6 +198,8 @@ li {
   display: flex;
   justify-content: space-evenly;
   padding: 0;
+  flex: 1;
+  max-width: 500px;
 }
 
 .features-house li {
@@ -279,4 +294,73 @@ li {
 
 .article-description span {
   color: #e08709;
+}
+
+/* Testimonials */
+.testimonial {
+  background: #71b100;
+  font-size: 2.4rem;
+  padding: 2rem;
+  color: #ffffff;
+  border-radius: 2rem;
+}
+
+.testimonial p {
+  text-align: right;
+}
+
+.testimonial blockquote {
+  position: relative;
+  padding-left: 5rem;
+  font-weight: 300;
+}
+
+.testimonial blockquote::before {
+  position: absolute;
+  left: -2rem;
+  content: '';
+  background-image: url(../img/comilla.svg);
+  width: 4rem;
+  height: 4rem;
+}
+
+/* Footer */
+
+.site-footer {
+  background-color: #333333;
+  margin: 0;
+}
+
+.copyright {
+  margin: 0;
+  color: #ffffff;
+}
+
+.footer-container {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/** Internal Pages **/
+
+/* About Us */
+.about-us-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  /* Formas de definir el tamaño de las columnas con grid (50%, 50%) (1fr 1fr)*/
+  grid-column-gap: 2rem; /*Detectar cuando los elementos chocan entre sí, y agregarles un espacio entre ellos*/
+}
+
+.about-us-text  blockquote{
+  font-weight: 900;
+  font-size: 2rem;
+  margin: 0;
+  padding: 3rem 0;
+}
+
+/* Advertisments */
+.property-resume {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
