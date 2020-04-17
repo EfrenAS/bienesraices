@@ -52,6 +52,7 @@ li {
 
 /*** Utilities ***/
 .container {
+  width: 95%;
   max-width: 120rem;
   margin: 0 auto;
 }
@@ -93,6 +94,15 @@ max-width: 800px;
   font-size: 1.8rem;
   padding: 1rem 3rem;
   margin-top: 3rem;
+  display: block;
+  flex: 0 0 100%;
+}
+
+@media (min-width: 768px) {
+  .btn {
+    display: inline-block;
+    flex: 0 0 auto;
+  }
 }
 
 .btn:hover {
@@ -129,6 +139,13 @@ max-width: 800px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .header-container {
+    text-align: left;
+  }
 }
 
 .header-container h1 {
@@ -139,21 +156,34 @@ max-width: 800px;
 }
 
 .bar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .bar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 /* Navegación */
 .navigation a {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   color: #ffffff;
-  margin-right: 2rem;
+  display: block;
 }
 
-.navigation a:last-of-type {
-  margin: 0;
+@media (min-width: 768px) {
+  .navigation a {
+    display: inline-block;
+    font-size: 1.8rem;
+    margin-right: 2rem;
+  }
+
+  .navigation a:last-of-type {
+    margin: 0;
+  }
 }
 
 .navigation:hover {
@@ -161,14 +191,21 @@ max-width: 800px;
 }
 
 /* About-us */
-.about-us {
-  display: flex;
-  justify-content: space-between;
+@media (min-width: 768px) {
+  .about-us {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .icons {
-  flex-basis: calc(33.3% - 1rem);
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .icons {
+    flex-basis: calc(33.3% - 1rem);
+  }
 }
 
 .icons h3 {
