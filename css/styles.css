@@ -421,10 +421,12 @@ max-width: 800px;
 /** Internal Pages **/
 
 /* About Us */
-.about-us-container{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);  /* Formas de definir el tamaño de las columnas con grid (50%, 50%) (1fr 1fr)*/
-  grid-column-gap: 2rem; /*Detectar cuando los elementos chocan entre sí, y agregarles un espacio entre ellos*/
+@media (min-width: 768px) {
+  .about-us-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* Formas de definir el tamaño de las columnas con grid (50%, 50%) (1fr 1fr)*/
+    grid-column-gap: 2rem; /*Detectar cuando los elementos chocan entre sí, y agregarles un espacio entre ellos*/
+  }
 }
 
 .about-us-text  blockquote{
