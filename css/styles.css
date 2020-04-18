@@ -213,17 +213,24 @@ max-width: 800px;
 }
 
 /* Advertisements */
-.ad-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+@media (min-width: 768px) {
+  .ad-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
 .advert {
-  flex: 0 0 calc(33.3% - 1rem); /*Es la versión corta de los siguiente atributos flex-grow; flex-wrap; y flex-basis; deben ser definidos en este orden*/
   border: 1px solid #b5b5b5;
   background-color: #f5f5f5;
   margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .advert {
+    flex: 0 0 calc(33.3% - 1rem); /*Es la versión corta de los siguiente atributos flex-grow; flex-wrap; y flex-basis; deben ser definidos en este orden*/
+  }
 }
 
 .ad-content {
@@ -277,7 +284,7 @@ max-width: 800px;
 }
 
 .contact-container {
-  flex: 1;
+  flex: 0 0 95%;
   color: #ffffff;
 }
 
@@ -286,23 +293,29 @@ max-width: 800px;
 }
 
 /* Blog */
-.blog-container {
-  display: flex;
-  justify-content: space-between;
-}
+@media (min-width: 768px) {
+  .blog-container {
+    display: flex;
+    justify-content: space-between;
+  }
 
-.blog-container .blog {
-  flex-basis: 60%;
-}
+  .blog-container .blog {
+    flex-basis: 60%;
+  }
 
-.blog-container .testimonials {
-  flex-basis: calc(40% - 2rem);
+  .blog-container .testimonials {
+    flex-basis: calc(40% - 2rem);
+  }
 }
-
 .blog-entries {
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .blog-entries {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .blog-entries:last-of-type {
@@ -378,6 +391,16 @@ max-width: 800px;
   margin: 0;
 }
 
+.site-footer nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .site-footer nav {
+    display: block;
+  }
+}
+
 .copyright {
   margin: 0;
   color: #ffffff;
@@ -385,8 +408,14 @@ max-width: 800px;
 
 .footer-container {
   padding: 3rem 0;
-  display: flex;
-  justify-content: space-between;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 /** Internal Pages **/
