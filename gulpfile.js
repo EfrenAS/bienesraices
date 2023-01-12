@@ -53,7 +53,6 @@ function versionWebp() {
         .pipe(notify({ message: 'Imagen Completada' }));
 }
 
-
 function watchFiles() {
     watch(paths.scss, css);
     watch(paths.js, javascript);
