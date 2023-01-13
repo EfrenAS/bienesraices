@@ -1,6 +1,11 @@
-.btn-yellow {
+.btn-yellow-inlineblock {
+  @include button($yellow, inline-block)
+}
+
+.btn-yellow-block {
   @include button($yellow, block)
 }
+
 
 .btn-green {
   @include button ($green, inline-block)
