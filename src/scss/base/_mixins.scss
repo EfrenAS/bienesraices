@@ -25,6 +25,7 @@
 
 @mixin button($bgColor, $display) {
   background-color: $bgColor;
+  border: none;
   display: $display;
   color: $white;
   font-weight: $bold;
@@ -35,5 +36,6 @@
 
   &:hover {
     background-color: darken($bgColor, 5);
+    cursor: pointer;
   }
 }
