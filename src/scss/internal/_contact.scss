@@ -1,3 +1,11 @@
+.contact-form {
+
+  legend {
+    color: $darkGray;
+    font-size: 2rem;
+  }
+}
+
 .form-fields{
   display: flex;
   flex-direction: column;
@@ -9,8 +17,17 @@
   }
 
   input,
-  select {
+  select,
+  textarea {
+    background-color: $white;
     border: 1px solid $gray;
+    border-radius: 1rem;
     padding: 0.5rem;
   }
+}
+
+.contact-radio {
+  max-width: 30rem;
+  flex-direction: row;
+  justify-content: space-between;
 }

@@ -1,3 +1,28 @@
+.right-menu {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  
+  @include tablet {
+    align-items: flex-end;
+  }
+
+  .dark-mode-btn {
+    filter: invert(100%);
+    margin: 3rem 0;
+    width: 3rem;
+
+    &:hover {
+     cursor: pointer; 
+    }
+
+    @include tablet {
+      margin-top: 0;
+    }
+  }
+}
+
+
 .bar {
   align-items: center;
   display: flex;
@@ -5,16 +30,17 @@
   padding-top: 3rem;
 
   @include tablet {
+    align-items: flex-end;
     flex-direction: row;
     justify-content: space-between;
   }
 }
 
 .navigation-main {
+  height: 0;
   opacity: 0;
   transition: visibility .3s ease-in-out, opacity 0.5s linear;
   visibility: hidden;
-
 
   @include tablet {
     display: flex;
@@ -22,6 +48,7 @@
     opacity: 1;
     visibility: visible;
   }
+
   a{
     color: $white;
     display: block;
@@ -42,6 +69,7 @@
 
 .mobile-menu {
   @include tablet {
+    cursor: pointer;
     display: none;
   }
 
@@ -51,6 +79,7 @@
 }
 
 .display-on {
+  height: auto;
   opacity: 1;
   visibility: visible;
 }
