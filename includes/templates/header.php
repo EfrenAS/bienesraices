@@ -16,7 +16,7 @@
           <img src="/bienesraicesweb/build/img/logo.svg" alt="Logo de Bienes Raices">
         </a>
         <div class="mobile-menu">
-          <img src="build/img/barras.svg" alt="icono menu responsive">
+          <img src="/bienesraicesweb/build/img/barras.svg" alt="icono menu responsive">
         </div>
         <div class="right-menu">
           <img src="/bienesraicesweb/build/img/dark-mode.svg" alt="boton modo oscuro" class="dark-mode-btn">
