@@ -1,0 +1,20 @@
+.footer {
+  background-color: $darkGray;
+  padding: calc($spacing / 2) 0;
+  margin-bottom: 0;
+
+  .footer-container {
+    padding-top: calc($spacing / 2);
+  }
+
+  .navigation-main {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+  }
+
+  .copyright {
+    color: $white;
+    text-align: center;
+  }
+}

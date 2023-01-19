@@ -1,0 +1,45 @@
+.dark-mode {
+  background-color: darken($darkGray, 10);
+
+  p {
+    color: $white;
+  }
+
+  a, h1, h2, h3, h4 {
+    color: $gray;
+  }
+
+  .add-cards,
+  .add-characteristics {
+    background-color: $darkGray;
+    border: 1px solid $darkGray;
+
+    .price-add {
+      color: $green;
+    }
+
+    .add-icon {
+      filter: invert(100%);
+    }
+  }
+
+  .about-us-text {
+    color:$white;
+  }
+
+  .contact-form {
+    legend,
+    label {
+      color: $gray;
+    }
+
+    input:not([type="submit"]),
+    textarea,
+    select {
+      background-color: $darkGray;
+      border: 1px solid $darkGray;
+      color: $gray;
+    }
+  }
+
+}

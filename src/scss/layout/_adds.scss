@@ -1,0 +1,46 @@
+@include tablet {
+  .adds-container {
+    @include grid(3, 2rem);
+  }
+}
+
+.add-cards {
+  background-color: lighten($gray, 5);
+  border: 1px solid darken($gray, 10);
+  margin-bottom: 2rem;
+
+  .add-content {
+    padding: 2rem;
+  }
+
+  h3, p {
+    margin: 0;
+  }
+}
+
+.price-add {
+  color: $green;
+  font-size: 3rem;
+  font-weight: $bold;
+}
+
+.icons-characteristics {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  max-width: 40rem;
+
+  li {
+    flex: 1;
+    display: flex;
+  }
+
+  img {
+    flex: 0 0 3rem;
+    margin-right: 1rem;
+  }
+
+  p {
+    font-weight: $black;
+  }
+}
